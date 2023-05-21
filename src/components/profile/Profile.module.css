@@ -1,1 +1,64 @@
-/* imp props */
+.profile {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.description {
+    padding: 48px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #ffffff;
+}
+
+.avatar {
+    margin-bottom: 24px;
+    border-radius: 50%;
+    border: 2px solid #b5b8bc;
+}
+
+.name {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.tag,
+.location {
+    margin: 8px;
+    font-size: 26px;
+    color: #96a2ae;
+}
+
+.stats {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stats>li {
+    display: flex;
+    flex-direction: column;
+    padding: 28px;
+    font-size: 24px;
+    text-align: center;
+    border-top: 1px solid #d3d5e3;
+    background-color: #f3f6f9;
+    border-left: 1px solid #d3d5e3;
+    border-right: 1px solid #d3d5e3;
+}
+
+.label {
+    padding-bottom: 8px;
+    color: #8a8b8e;
+}
+
+.quantity {
+    font-weight: 700;
+    border-radius: 8px;
+}

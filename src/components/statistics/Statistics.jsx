@@ -10,10 +10,10 @@ export const Statistics = ({ title, stats }) => (
     <div className={css.statisticsContainer}>
       <section className={css.statistics}>
             {title && <h2 className={css.title}>{title}</h2>}
-        <ul className={css.stat-list}>
+        <ul className={css.statList}>
             {stats.map(stat => (
                 <li key={stat.id}
-                    className={css.item}
+                    className={title ? css.statListItem : css.statListItemNoTitle}
                     style={{
                         backgroundColor: getRandomHexColor()
                     }}>
@@ -30,9 +30,9 @@ Statistics.propTypes = {
     title: PropTypes.string,
     stats: PropTypes.arrayOf(
         PropTypes.shape({
-            id: PropTypes.string,
-            label: PropTypes.string,
-            percentage: PropTypes.number,
+            id: PropTypes.string.isRequired,
+            label: PropTypes.string.isRequired,
+            percentage: PropTypes.number.isRequired,
   }),
  ).isRequired,
 };
